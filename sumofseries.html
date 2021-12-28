@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script>
+        function sumofseries() {
+            var anynumber, i, sum = 0;
+            anynumber = parseInt(document.getElementById("txtfirst").value)
+            for (i = 1; i <= anynumber; i++) {
+                sum = sum + i;
+            }
+            document.getElementById("divsumofseries").innerHTML = "sum of series is:" + sum;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="txtfirst" placeholder="ENTER THE ANY NUMBER" /><br>
+    <button onclick="sumofseries()">submit</button>
+    <div id="divsumofseries"></div>
+</body>
+
+</html>

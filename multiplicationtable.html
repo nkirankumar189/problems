@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <script>
+        function multiplicationtable() {
+            var table, i;
+            table = parseInt(document.getElementById("txttable").value)
+            for (i = 1; i <= 10; i++) {
+                document.write(table + "X" + i + "=" + i * table + "</br>")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="txttable" placeholder="ENTER THE TABLE NUMBER" /><br>
+    <button onclick="multiplicationtable()">submit</button>
+</body>
+
+</html>

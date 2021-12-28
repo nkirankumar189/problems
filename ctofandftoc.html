@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script>
+        function getCelsiusandFahrenheit() {
+            var celsius, Fahrenheit;
+            celsius = parseInt(document.getElementById("txtcelsius").value)
+
+            Fahrenheit = celsius * 9 / 5 + 32;
+            celsius = (Fahrenheit - 32) * 5 / 9;
+            document.getElementById("divFahrenheit").innerHTML = "Fahrenheit is:" + Fahrenheit;
+            document.getElementById("divcelsius").innerHTML = "celsius is:" + celsius;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="txtcelsius" placeholder="ENTER THE CELCIUS" /><br>
+
+    <button onclick="getCelsiusandFahrenheit()">sibmit</button>
+    <div id="divFahrenheit"></div>
+    <div id="divcelsius"></div>
+</body>
+
+</html>

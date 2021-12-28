@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>JavaScript program to find the Fibonacci series of a given number</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td> <input type="text" name="a" id="first" placeholder="Enter a number"> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="fibonacci ()">Submit</button> </td>
+        </tr>
+    </table>
+    <div id="num"></div>
+</body>
+
+<script type="text/javascript">
+    function fibonacci() {
+        var n, i, c;
+        n = parseInt(document.getElementById("first").value);
+        var a = 0;
+        var b = 1;
+        document.write("Fibonacci series of " + n + " is :</br>");
+        document.write(a + " " + b);
+        for (i = 2; i < n; i++) {
+            c = a + b;
+            a = b;
+            b = c;
+            document.write(" " + c + " ");
+        }
+    }
+</script>
+
+</html>

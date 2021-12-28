@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function sum() {
+            var n, i, sum = 0;
+            n = parseInt(document.getElementById("first").value);
+            for (i = 1; i <= n; i++) {
+                if (i % 2 == 0) {
+                    sum = sum + i;
+                }
+            }
+            document.getElementById("num").innerHTML = "Sum of " + n + " even natural numbers is :" + sum;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="first" placeholder="Enter a number" />
+    <button onclick="sum ()">Submit</button>
+    <div id="num"></div>
+</body>
+
+</html>

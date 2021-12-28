@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script>
+        function swapping() {
+            var a, b;
+            a = parseInt(document.getElementById("txtfirstnumber").value)
+            b = parseInt(document.getElementById("txtsecondnumber").value)
+            a = b + a;
+            b = a - b;
+            a = a - b;
+            document.getElementById("divfirst").innerHTML = "after swapping a is:" + a;
+            document.getElementById("divsecond").innerHTML = "after swapping b is:" + b;
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="txtfirstnumber" placeholder="ENTER THE FIRST NUMBER" /><br>
+    <input type="text" id="txtsecondnumber" placeholder="ENTER THE SEOND NUMBEER" /><br>
+    <button onclick="swapping()">submit</button>
+    <div id="divfirst"></div>
+    <div id="divsecond"></div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script>
+        function areaPerimeterOfSquare() {
+            var length, area, perimeter;
+            length = parseInt(document.getElementById("txtlength").value)
+            area = length * length
+            perimeter = 4 * length
+            document.getElementById("divArea").innerHTML = "area of square is:" + area;
+            document.getElementById("divPerimeter").innerHTML = "perimeter of square is:" + perimeter;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="txtlength" placeholder="ENTER THE LENGTH" /><br>
+    <button onclick="areaPerimeterOfSquare()">sibmit</button>
+    <div id="divArea"></div>
+    <div id="divPerimeter"></div>
+</body>
+
+</html>
